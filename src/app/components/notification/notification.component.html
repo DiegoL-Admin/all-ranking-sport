@@ -1,0 +1,6 @@
+<div *ngIf="currentNotification" class="notification-container">
+  <div class="alert alert-{{ currentNotification.type }} alert-dismissible fade show" role="alert">
+    {{ currentNotification.message }}
+    <button type="button" class="btn-close" aria-label="Close" (click)="closeNotification()"></button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #adb5bd; // A lighter gray for hover
+}
+
+.footer .btn-floating {
+    transition: transform 0.3s ease;
+}
+
+.footer .btn-floating:hover {
+    transform: translateY(-2px);
+}

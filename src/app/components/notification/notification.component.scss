@@ -1,0 +1,7 @@
+.notification-container {
+  position: fixed;
+  top: 70px; /* Below the header */
+  right: 20px;
+  z-index: 1050; /* Above most content */
+  width: 300px;
+}

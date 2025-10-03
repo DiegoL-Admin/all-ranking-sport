@@ -1,0 +1,30 @@
+<div class="container my-5">
+  <h2 class="mb-4">Shopping Cart</h2>
+  <div *ngIf="(cartItems$ | async) as items; else emptyCart">
+    <div *ngIf="items.length > 0; else emptyCart">
+      <ul class="list-group mb-4">
+        <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let item of items">
+          <div>
+            <h5 class="mb-1">{{ item.product.name }}</h5>
+            <small>{{ item.product.price | currency }} x {{ item.quantity }}</small>
+          </div>
+          <strong>{{ (item.product.price * item.quantity) | currency }}</strong>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-end align-items-center">
+        <h4>Total: <span class="fw-bold">{{ total | currency }}</span></h4>
+      </div>
+      <div class="d-flex justify-content-end mt-3">
+        <button class="btn btn-danger me-2" (click)="clearCart()">Clear Cart</button>
+        <a routerLink="/checkout" class="btn btn-primary">Proceed to Checkout</a>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #emptyCart>
+    <div class="alert alert-info" role="alert">
+      Your cart is empty.
+    </div>
+    <a routerLink="/products" class="btn btn-primary">Go Shopping</a>
+  </ng-template>
+</div>
