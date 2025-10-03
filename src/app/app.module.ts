@@ -15,6 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MostPopularProductsComponent } from './components/most-popular-products/most-popular-products.component';
 import { RegisterComponent } from './components/register/register.component';
 import { NotificationComponent } from './components/notification/notification.component';
+import { ProductFormComponent } from './components/product-form/product-form.component';
+import { ChatbotComponent } from './components/chatbot/chatbot.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { NotificationComponent } from './components/notification/notification.co
     FooterComponent,
     MostPopularProductsComponent,
     RegisterComponent,
-    NotificationComponent
+    NotificationComponent,
+    ProductFormComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,

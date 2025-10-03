@@ -1,14 +1,17 @@
 <div class="container my-5">
   <app-banner 
-    title="Todo el mundo del deporte"
-    text="Encuentra los mejores productos deportivos al mejor precio."
-    buttonText="Compra ahora"
+    title="All the products you need"
+    text="Find the best sports products at unbeatable prices."
+    buttonText="Shop Now"
     imageUrl="assets/banner.jpg">
   </app-banner>
 
   <app-most-popular-products></app-most-popular-products>
 
   <h2 class="mb-4">All Products</h2>
+  <div *ngIf="isLoggedIn" class="mb-3 text-end">
+    <a routerLink="/products/create" class="btn btn-success">Create New Product</a>
+  </div>
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
     <div class="col" *ngFor="let product of products">
       <div class="card h-100 product-card">
@@ -19,6 +22,10 @@
           <h6 class="card-subtitle mb-2 text-muted">{{ product.price | currency }}</h6>
           <div class="mt-auto">
             <button (click)="addToCart(product)" class="btn btn-primary">Add to Cart</button>
+            <div *ngIf="isLoggedIn" class="mt-2 d-flex justify-content-between">
+              <button (click)="editProduct(product.id!)" class="btn btn-info btn-sm">Edit</button>
+              <button (click)="deleteProduct(product.id!)" class="btn btn-danger btn-sm">Delete</button>
+            </div>
           </div>
         </div>
       </div>
