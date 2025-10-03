@@ -1,27 +1,61 @@
-# AllRankingSport
+# 🏆 AllRankingSport
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión **18.2.21**.
 
-## Development server
+## 🚀 Servidor de desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para iniciar el servidor de desarrollo, ejecuta el siguiente comando:
 
-## Code scaffolding
+```bash
+ng serve
+```
+Luego, abre tu navegador y dirígete a:
+👉 http://localhost:4200/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+La aplicación se recargará automáticamente cada vez que realices cambios en los archivos fuente.
 
-## Build
+🧱 Generación de componentes
+Para crear un nuevo componente:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+bash
+Copiar código
+ng generate component nombre-del-componente
+También puedes generar otros elementos como directivas, pipes, servicios, clases, guards, interfaces, enums o módulos:
 
-## Running unit tests
+bash
+Copiar código
+ng generate directive|pipe|service|class|guard|interface|enum|module
+🏗️ Compilación del proyecto
+Para compilar la aplicación y generar los archivos listos para producción:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+bash
+Copiar código
+ng build
+Los archivos compilados se almacenarán en la carpeta dist/.
 
-## Running end-to-end tests
+🧪 Ejecución de pruebas unitarias
+Para ejecutar las pruebas unitarias con Karma:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+bash
+Copiar código
+ng test
+🔎 Pruebas end-to-end (E2E)
+Para ejecutar pruebas de extremo a extremo:
 
-## Further help
+bash
+Copiar código
+ng e2e
+⚠️ Antes de ejecutar este comando, asegúrate de haber instalado un paquete que implemente las capacidades de pruebas E2E.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📚 Ayuda adicional
+Si necesitas más información o comandos disponibles en Angular CLI, puedes ejecutar:
+
+bash
+Copiar código
+ng help
+O consultar la documentación oficial de Angular CLI.
+
+💡 AllRankingSport está diseñado para ofrecer una experiencia moderna, escalable y fácil de mantener en el desarrollo de aplicaciones web deportivas con Angular.
+
+<img width="1344" height="630" alt="image" src="https://github.com/user-attachments/assets/82603bcc-c557-4554-ac37-021588418ca1" />
+
