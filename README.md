@@ -8,6 +8,7 @@ Para iniciar el servidor de desarrollo, ejecuta el siguiente comando:
 
 ```bash
 ng serve
+```
 Luego, abre tu navegador y dirígete a:
 👉 http://localhost:4200/
 
