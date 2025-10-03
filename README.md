@@ -55,3 +55,6 @@ ng help
 O consultar la documentación oficial de Angular CLI.
 
 💡 AllRankingSport está diseñado para ofrecer una experiencia moderna, escalable y fácil de mantener en el desarrollo de aplicaciones web deportivas con Angular.
+
+<img width="1344" height="630" alt="image" src="https://github.com/user-attachments/assets/82603bcc-c557-4554-ac37-021588418ca1" />
+
